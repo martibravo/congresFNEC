@@ -22,13 +22,6 @@
   <body>
     <nav class="navbar is-transparent is-fixed-top is-spaced">
       <div class="navbar-brand">
-        <a class="navbar-item navlink" data-slide="0">
-          <img
-            src="/images/LogoFNEC.png"
-            alt="Logo FNEC"
-            height="32"
-            class="is-hidden-desktop"
-          />
           <span class="nav-title"><span>XXXVIIIè</span> Congrés Nacional</span>
         </a>
 
@@ -80,22 +73,6 @@
                   2022
                 </li>
                 <li>Informe del President</li>
-                <li>
-                  Ratificacions que corresponen al Congrés Nacional
-                  <ol>
-                    <li>
-                      Ratificació, si escau, dels nomenaments de
-                      <ul>
-                        <li>Ignasi Vives, Secretari General</li>
-                        <li>Pau Duran, Secretari de Política Universitària</li>
-                        <li>Víctor Cuadrado, Secretari d'Organització</li>
-                      </ul>
-                    </li>
-                    <li>
-                      Ratificació, si s'escau, de l'admissió del nucli de la URV
-                    </li>
-                  </ol>
-                </li>
                 <li>Aprovació, si escau, de l’Informe dels Estats Financers</li>
                 <li>Elecció de la nova Coordinadora Nacional</li>
                 <li>Elecció de la Comissió de Conflictes</li>
@@ -166,48 +143,8 @@
           >Memòria del Mandat</button>
           </div>
         </div>
-        <div class="swiper-slide" data-history="ratificacions-cn">
-          <div class="slide-content punt" data-punt="4.1">
-            <p
-              class="title red centered"
-              style="
-                margin-bottom: 50px;
-                max-width: 70%;
-                margin-left: auto;
-                margin-right: auto;
-              "
-            >
-              Ratificacions dels següents nomenaments
-            </p>
-            <div
-              class="rich-text"
-              style="margin: 20px auto; width: fit-content"
-            >
-              <ul>
-                <li><b>Ignasi Vives,</b> Secretari General</li>
-                <li><b>Pau Duran,</b> Secretari de Política Universitària</li>
-                <li><b>Víctor Cuadrado,</b> Secretari d'Organització</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide" data-history="ratificacio-urv">
-          <div class="slide-content punt" data-punt="4.2">
-            <p
-              class="title red centered"
-              style="
-                margin-bottom: 50px;
-                max-width: 70%;
-                margin-left: auto;
-                margin-right: auto;
-              "
-            >
-              Ratificació de l'admissió del nucli de la URV
-            </p>
-          </div>
-        </div>
         <div class="swiper-slide" data-history="estats-financers">
-          <div class="slide-content punt" data-punt="5">
+          <div class="slide-content punt" data-punt="4">
             <p
               class="title red centered"
               style="
@@ -225,6 +162,28 @@
             >
               Veure l'Informe
             </button>
+          </div>
+        </div>
+       
+        <div class="swiper-slide" data-history="conflictes">
+          <div class="slide-content punt" data-punt="5">
+            <p
+              class="title red centered"
+              style="
+                margin-bottom: 50px;
+                max-width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            >
+              Elecció de la Comissió de Conflictes
+            </p>
+            <button
+            class="button is-danger docbtn" type="button"
+            onclick="openModal('nomenaments-conflictes', 'Nomenaments a la Comissió de Conflictes')"
+          >
+            Veure Nomenaments
+          </button>
           </div>
         </div>
         <div class="swiper-slide" data-history="coordinadora">
@@ -248,29 +207,8 @@
             </button>
           </div>
         </div>
-        <div class="swiper-slide" data-history="conflictes">
-          <div class="slide-content punt" data-punt="7">
-            <p
-              class="title red centered"
-              style="
-                margin-bottom: 50px;
-                max-width: 70%;
-                margin-left: auto;
-                margin-right: auto;
-              "
-            >
-              Elecció de la Comissió de Conflictes
-            </p>
-            <button
-            class="button is-danger docbtn" type="button"
-            onclick="openModal('nomenaments-conflictes', 'Nomenaments a la Comissió de Conflictes')"
-          >
-            Veure Nomenaments
-          </button>
-          </div>
-        </div>
         <div class="swiper-slide" data-history="torn-obert">
-            <div class="slide-content punt" data-punt="8">
+            <div class="slide-content punt" data-punt="7">
               <p
                 class="title red centered"
                 style="

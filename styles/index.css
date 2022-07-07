@@ -138,8 +138,8 @@ body.inici .navbar {
 .nav-title {
   color: black;
   font-weight: 800;
-  left: 10px;
-  top: 10px;
+  left: 32px;
+  top: 20px;
   font-size: 32px;
   line-height: 1;
   width: 300px;
@@ -210,5 +210,46 @@ body:not(.inici) > .fnec {
   .modal-card,
   .modal-content {
     width: 1200px;
+  }
+}
+
+.button.is-danger {
+  background: black;
+}
+
+@media screen and (max-width: 768px) {
+  .title.red {
+    font-size: 36px;
+    letter-spacing: 0;
+  }
+
+  .title.red.inici {
+    font-size: 50px;
+    letter-spacing: 0;
+  }
+
+  #slide1 {
+    background-image: url(/images/BanderaFNEC.svg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 100% 100%;
+  }
+
+  .rich-text {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+
+  .nav-title {
+    font-size: 24px;
+    top: 20px;
+    left: 0px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar-item,
+  .navbar-burger {
+    display: none;
   }
 }
