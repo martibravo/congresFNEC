@@ -1,0 +1,24 @@
+<svg width="858" height="826" viewBox="0 0 858 826" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="231.816" y1="815.379" x2="11.1722" y2="271.306" stroke="#644C36" stroke-width="20.8846" stroke-linecap="round"/>
+<rect x="27.4656" y="283.726" width="383.672" height="396.319" transform="rotate(-22.0745 27.4656 283.726)" fill="#FFDE0C"/>
+<line x1="87.8241" y1="432.519" x2="443.371" y2="288.331" stroke="#DA121A" stroke-width="40.73"/>
+<line x1="55.4398" y1="352.68" x2="410.987" y2="208.492" stroke="#DA121A" stroke-width="40.73"/>
+<line x1="120.196" y1="512.361" x2="475.743" y2="368.173" stroke="#DA121A" stroke-width="40.73"/>
+<line x1="152.586" y1="592.203" x2="508.134" y2="448.014" stroke="#DA121A" stroke-width="40.73"/>
+<g filter="url(#filter0_f_102_3)">
+<rect width="64.6012" height="334.379" transform="matrix(0.926724 -0.375743 0.375735 0.926727 278.019 177.402)" fill="black" fill-opacity="0.24"/>
+</g>
+<rect x="269.112" y="144.192" width="383.672" height="396.319" transform="rotate(-22.0745 269.112 144.192)" fill="#FFDE0C"/>
+<line x1="329.46" y1="292.985" x2="685.007" y2="148.796" stroke="#DA121A" stroke-width="40.73"/>
+<line x1="297.076" y1="213.146" x2="652.623" y2="68.9575" stroke="#DA121A" stroke-width="40.73"/>
+<line x1="361.832" y1="372.827" x2="717.379" y2="228.638" stroke="#DA121A" stroke-width="40.73"/>
+<line x1="394.222" y1="452.671" x2="749.769" y2="308.482" stroke="#DA121A" stroke-width="40.73"/>
+<path d="M516.868 471.927L532.149 506.929L418.025 509.218L516.868 471.927Z" fill="black" fill-opacity="0.21"/>
+<defs>
+<filter id="filter0_f_102_3" x="266.501" y="141.611" width="208.542" height="357.188" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="5.7591" result="effect1_foregroundBlur_102_3"/>
+</filter>
+</defs>
+</svg>

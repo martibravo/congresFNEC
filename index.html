@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>38è Congrés Nacional — FNEC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link
+      href="https://uploads-ssl.webflow.com/612646545269d27901b0e9b0/612f78924aee3a840f17e52e_favicon.ico"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <link
+      href="https://uploads-ssl.webflow.com/612646545269d27901b0e9b0/619fd3a873d5e81aec954113_FNEC-256px.png"
+      rel="apple-touch-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/styles/index.css" />
+  </head>
+  <body>
+    <nav class="navbar is-transparent is-fixed-top is-spaced">
+      <div class="navbar-brand">
+        <a class="navbar-item navlink" data-slide="0">
+          <img
+            src="/images/LogoFNEC.png"
+            alt="Logo FNEC"
+            height="32"
+            class="is-hidden-desktop"
+          />
+          <span class="nav-title"><span>XXXVIIIè</span> Congrés Nacional</span>
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-end">
+        <a class="navbar-item navlink" data-slide="1">Ordre del dia</a>
+      </div>
+    </nav>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide" id="slide1" data-history="inici">
+          <div class="slide-content">
+            <img
+              src="/images/LogoFNEC.png"
+              alt="Logo FNEC"
+              style="width: 200px; margin-bottom: 30px; justify-self: start"
+            />
+            <p class="title red inici" style="margin-bottom: 50px">
+              XXXVIIIè <br />
+              Congrés Nacional
+            </p>
+            <p class="subtitle" style="font-size: 30px">
+              dijous, 7 de juliol de 2022
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide" data-history="ordre">
+          <div class="slide-content">
+            <p class="title red centered" style="margin-bottom: 50px">
+              Ordre del dia
+            </p>
+            <div class="rich-text">
+              <ol>
+                <li>Constitució de la mesa del Congrés Nacional</li>
+                <li>
+                  Aprovació, si s’escau, de l'acta de la sessió d’1 de juliol de
+                  2022
+                </li>
+                <li>Informe del President</li>
+                <li>
+                  Ratificacions que corresponen al Congrés Nacional
+                  <ol>
+                    <li>
+                      Ratificació, si escau, dels nomenaments de
+                      <ul>
+                        <li>Ignasi Vives, Secretari General</li>
+                        <li>Pau Duran, Secretari de Política Universitària</li>
+                        <li>Víctor Cuadrado, Secretari d'Organització</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Ratificació, si s'escau, de l'admissió del nucli de la URV
+                    </li>
+                  </ol>
+                </li>
+                <li>Aprovació, si escau, de l’Informe dels Estats Financers</li>
+                <li>Elecció de la nova Coordinadora Nacional</li>
+                <li>Elecció de la Comissió de Conflictes</li>
+                <li>Torn Obert de Paraules</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" data-history="constitucio">
+          <div class="slide-content punt" data-punt="1">
+            <p
+              class="title red centered"
+              style="
+                margin-bottom: 50px;
+                max-width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            >
+              Constitució de la mesa del Congrés Nacional
+            </p>
+            <button
+              class="button is-danger docbtn" type="button"
+              onclick="openModal('reglament-congres', 'Reglament del Congrés Nacional')"
+            >
+              Reglament del Congrés
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide" data-history="acta-anterior">
+          <div class="slide-content punt" data-punt="2">
+            <p
+              class="title red centered"
+              style="
+                margin-bottom: 50px;
+                max-width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            >
+              Aprovació, si s'escau, de l'acta de la sessió d'1 de juliol de
+              2021
+            </p>
+            <button
+              class="button is-danger docbtn" type="button"
+              onclick="openModal('acta-anterior', 'Acta de la sessió de 1/07/2021')"
+            >
+              Veure acta del 1r de jul. 2021
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide" data-history="informe">
+          <div class="slide-content punt" data-punt="3">
+            <p
+              class="title red centered"
+              style="
+                margin-bottom: 50px;
+                max-width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            >
+              Informe del President
+            </p>
+            <button
+            class="button is-danger docbtn" type="button"
+            onclick="openModal('memoria-mandat', 'Memòria del Mandat')"
+          >Memòria del Mandat</button>
+          </div>
+        </div>
+        <div class="swiper-slide" data-history="ratificacions-cn">
+          <div class="slide-content punt" data-punt="4.1">
+            <p
+              class="title red centered"
+              style="
+                margin-bottom: 50px;
+                max-width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            >
+              Ratificacions dels següents nomenaments
+            </p>
+            <div
+              class="rich-text"
+              style="margin: 20px auto; width: fit-content"
+            >
+              <ul>
+                <li><b>Ignasi Vives,</b> Secretari General</li>
+                <li><b>Pau Duran,</b> Secretari de Política Universitària</li>
+                <li><b>Víctor Cuadrado,</b> Secretari d'Organització</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" data-history="ratificacio-urv">
+          <div class="slide-content punt" data-punt="4.2">
+            <p
+              class="title red centered"
+              style="
+                margin-bottom: 50px;
+                max-width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            >
+              Ratificació de l'admissió del nucli de la URV
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide" data-history="estats-financers">
+          <div class="slide-content punt" data-punt="5">
+            <p
+              class="title red centered"
+              style="
+                margin-bottom: 50px;
+                max-width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            >
+              Aprovació de l'Informe d'Estats Financers
+            </p>
+            <button
+              class="button is-danger docbtn" type="button"
+              onclick="openModal('comptes', 'Informe d\'Estats Financers')"
+            >
+              Veure l'Informe
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide" data-history="coordinadora">
+          <div class="slide-content punt" data-punt="6">
+            <p
+              class="title red centered"
+              style="
+                margin-bottom: 50px;
+                max-width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            >
+              Elecció de la nova Coordinadora Nacional
+            </p>
+            <button
+              class="button is-danger docbtn" type="button"
+              onclick="openModal('candidatura-coordinadora', 'Candidatura a la Coordinadora Nacional')"
+            >
+              Veure Candidatura
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide" data-history="conflictes">
+          <div class="slide-content punt" data-punt="7">
+            <p
+              class="title red centered"
+              style="
+                margin-bottom: 50px;
+                max-width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            >
+              Elecció de la Comissió de Conflictes
+            </p>
+            <button
+            class="button is-danger docbtn" type="button"
+            onclick="openModal('nomenaments-conflictes', 'Nomenaments a la Comissió de Conflictes')"
+          >
+            Veure Nomenaments
+          </button>
+          </div>
+        </div>
+        <div class="swiper-slide" data-history="torn-obert">
+            <div class="slide-content punt" data-punt="8">
+              <p
+                class="title red centered"
+                style="
+                  margin-bottom: 50px;
+                  max-width: 70%;
+                  margin-left: auto;
+                  margin-right: auto;
+                "
+              >
+                Torn obert de Paraules
+              </p>
+            </div>
+          </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+    <img class="fnec is-hidden-touch" src="/images/LogoFNEC.png" />
+    <div class="modal" id="docView">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title" id="docTitle">Modal title</p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <iframe src="" id="docframe"></iframe>
+        </section>
+      </div>
+    </div>
+    <script type="module" src="/index.js"></script>
+  </body>
+</html>

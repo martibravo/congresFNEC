@@ -1,0 +1,214 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+@font-face {
+  font-family: "Jakarta";
+  src: url("/fonts/normal.ttf") format("truetype-variations");
+  font-weight: 200 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jakarta";
+  src: url("/fonts/italic.ttf") format("truetype-variations");
+  font-weight: 200 800;
+  font-style: italic;
+}
+
+:root {
+  --p: #da121a;
+  --bg: #dee2d4;
+  --swiper-theme-color: #da121a;
+}
+
+html,
+body {
+  font-family: "Jakarta", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: var(--bg);
+  overflow: hidden;
+}
+
+.swiper {
+  height: 100vh;
+  width: 100vw;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.slide-content {
+  margin: 0 auto;
+}
+
+.red {
+  color: var(--p);
+}
+
+.title {
+  font-weight: 800;
+  font-size: 72px;
+  letter-spacing: -3px;
+}
+
+.subtitle {
+  color: black;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.w-full {
+  width: 100%;
+}
+
+#slide1 {
+  background-image: url("/images/BanderaFNEC.svg");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 100% 120%;
+}
+
+#slide1 .slide-content {
+  margin-left: 15%;
+}
+
+.rich-text {
+  color: black;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.8;
+}
+
+.title.red.inici {
+  font-size: 100px;
+  letter-spacing: -4px;
+  line-height: 1;
+}
+
+.centered {
+  text-align: center;
+}
+
+li > ol,
+li > ul {
+  margin-left: 24px;
+}
+
+ol {
+  counter-reset: item;
+}
+
+ol > li {
+  display: block;
+}
+
+ol > li:before {
+  content: counters(item, ".") ".  ";
+  counter-increment: item;
+  font-weight: 800;
+  color: var(--p);
+}
+
+ol > li > ul {
+  list-style-type: disc;
+  padding-left: 24px;
+}
+
+.navbar {
+  background: transparent;
+  transition: opacity 0.25s ease-in-out;
+}
+
+a.navbar-item {
+  font-width: 700;
+  color: black;
+}
+
+a.navbar-item:hover {
+  color: var(--p);
+}
+
+body.inici .navbar {
+  opacity: 0;
+}
+
+.nav-title {
+  color: black;
+  font-weight: 800;
+  left: 10px;
+  top: 10px;
+  font-size: 32px;
+  line-height: 1;
+  width: 300px;
+  position: absolute;
+}
+
+body:not(.inici) > .fnec {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  z-index: 20;
+  width: 150px;
+}
+
+.nav-title > span {
+  color: var(--p);
+  display: block;
+}
+
+.slide-content {
+  position: relative;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.slide-content.punt::before {
+  content: attr(data-punt);
+
+  font-weight: 800;
+  font-size: 500px;
+  opacity: 0.15;
+  line-height: 1;
+  font-family: "Times New Roman", Times, serif;
+  z-index: -1;
+  color: black;
+
+  position: absolute;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.docbtn {
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-family: "Jakarta";
+}
+
+#docframe {
+  width: 100%;
+  min-width: 1000px;
+  min-height: 75vh;
+}
+
+@media screen and (min-width: 769px) {
+  .modal-card,
+  .modal-content {
+    width: 1200px;
+  }
+}
